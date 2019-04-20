@@ -1,4 +1,5 @@
 import util from '../../helpers/util';
+import './play.scss';
 
 let total = 0;
 
