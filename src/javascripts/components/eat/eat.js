@@ -13,8 +13,8 @@ const pointTally = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div>';
-  domString += '  <h1>Eat Quad</h1>';
+  domString += '<div id="eatQuad">';
+  domString += '  <h1>Eat</h1>';
   domString += '  <p>jpan</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
   domString += '  <button type="submit" id="healthy">Pure Lemon Grass Seed Oil Extract</button>';

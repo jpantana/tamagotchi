@@ -14,8 +14,8 @@ const fun = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div>';
-  domString += '  <h1>Eat Quad</h1>';
+  domString += '<div id="playQuad">';
+  domString += '  <h1>Play</h1>';
   domString += '  <p>jpan</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
   domString += '  <button type="submit" id="superFun">Taking A European Vacation</button>';
