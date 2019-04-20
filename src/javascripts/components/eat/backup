@@ -1,0 +1,106 @@
+import util from '../../helpers/util';
+
+const score = 100;
+const domStringBuilder = () => {
+  let domString = '';
+  domString += '<div>';
+  domString += '  <h1>Eat Quad</h1>';
+  domString += '  <p>JoshP</p>';
+  domString += `  <p>Fullness Score: <span>${score}</span></p>`;
+  domString += '  <button type="submit" id="healthy">Healthy</button>';
+  domString += '  <button type="submit" id="unhealthy">Unhealthy</button>';
+  domString += '</div>';
+
+  util.printToDom('eat', domString);
+};
+
+const full = (e) => {
+  e.preventDefault();
+  const healthyScore = [];
+  const eventId = e.target.id;
+  if (eventId === 'healthy') {
+    const newScore = score + 10;
+    healthyScore.push(newScore);
+    let domString = '';
+    domString += '<div>';
+    domString += '  <h1>Eat Quad</h1>';
+    domString += '  <p>JoshP</p>';
+    domString += `  <p>Fullness Score: <span>${newScore}</span></p>`;
+    domString += '  <button id="healthy">Healthy</button>';
+    domString += '  <button id="unhealthy">Unhealthy</button>';
+    domString += '</div>';
+    util.printToDom('eat', domString);
+  } else if (eventId === 'unhealthy') {
+    const newScore = score - 3;
+    let domString = '';
+    domString += '<div>';
+    domString += '  <h1>Eat Quad</h1>';
+    domString += '  <p>JoshP</p>';
+    domString += `  <p>Fullness Score: <span>${newScore}</span></p>`;
+    domString += '  <button id="healthy">Healthy</button>';
+    domString += '  <button id="unhealthy">Unhealthy</button>';
+    domString += '</div>';
+    util.printToDom('eat', domString);
+  }
+};
+
+export default { domStringBuilder, full };
+
+
+
+
+
+if (pointsTotal > 100) {
+    pointsTotal = 100;
+  } else if (pointsTotal <= 0) {
+    pointsTotal = 0;
+  } else {
+    pointsTotal;
+  }
+
+
+
+
+
+  import util from '../../helpers/util';
+
+const total = 100;
+const points = [];
+let pointsTotal = total + points;
+
+const pointTally = () => {
+  for (let i = 0; i < points.length; i += 1) {
+    // score = points.reduce((acc, b) => acc + b);
+    pointsTotal = total + points[i];
+  }
+};
+
+const domStringBuilder = () => {
+  let domString = '';
+  domString += '<div>';
+  domString += '  <h1>Eat Quad</h1>';
+  domString += '  <p>JoshP</p>';
+  domString += `  <p>Fullness Score: <span>${pointsTotal}</span></p>`;
+  domString += '  <button type="submit" id="healthy">Healthy</button>';
+  domString += '  <button type="submit" id="unhealthy">Unhealthy</button>';
+  domString += '</div>';
+  util.printToDom('eat', domString);
+  document.getElementById('healthy').addEventListener('click', (e) => {
+    e.preventDefault();
+    const healthPoints = 10;
+    points.push(healthPoints);
+    console.error(e);
+    pointTally();
+    domStringBuilder();
+  });
+  document.getElementById('unhealthy').addEventListener('click', (e) => {
+    e.preventDefault();
+    const unhealthPoints = -3;
+    points.push(unhealthPoints);
+    console.error(e);
+    pointTally();
+    domStringBuilder();
+  });
+};
+
+export default { domStringBuilder, pointTally };
