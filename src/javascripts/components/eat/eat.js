@@ -1,7 +1,6 @@
 import util from '../../helpers/util';
 
 let total = 100;
-const points = [];
 
 const pointTally = (num) => {
   total += num;
@@ -16,26 +15,22 @@ const domStringBuilder = () => {
   let domString = '';
   domString += '<div>';
   domString += '  <h1>Eat Quad</h1>';
-  domString += '  <p>JoshP</p>';
+  domString += '  <p>jpan</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
-  domString += '  <button type="submit" id="healthy">Healthy</button>';
-  domString += '  <button type="submit" id="unhealthy">Unhealthy</button>';
+  domString += '  <button type="submit" id="healthy">Pure Lemon Grass Seed Oil Extract</button>';
+  domString += '  <button type="submit" id="unhealthy">Cheeseburger Pizza</button>';
   domString += '</div>';
   util.printToDom('eat', domString);
   document.getElementById('healthy').addEventListener('click', (e) => {
     e.preventDefault();
     const healthPoints = 10;
-    points.push(healthPoints);
-    pointTally(points.reduce((acc, b) => acc + b));
-    points.splice(0, 1);
+    pointTally(healthPoints);
     domStringBuilder();
   });
   document.getElementById('unhealthy').addEventListener('click', (e) => {
     e.preventDefault();
     const unhealthPoints = -3;
-    points.push(unhealthPoints);
-    pointTally(points.reduce((acc, b) => acc + b));
-    points.splice(0, 1);
+    pointTally(unhealthPoints);
     domStringBuilder();
   });
 };
