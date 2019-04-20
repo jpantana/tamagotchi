@@ -1,6 +1,6 @@
 import util from '../../helpers/util';
 
-let total = 100;
+let total = 0;
 
 const fun = (num) => {
   total += num;
@@ -17,8 +17,8 @@ const domStringBuilder = () => {
   domString += '  <h1>Eat Quad</h1>';
   domString += '  <p>jpan</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
-  domString += '  <button type="submit" id="superFun">Pure Lemon Grass Seed Oil Extract</button>';
-  domString += '  <button type="submit" id="slightlyFun">Cheeseburger Pizza</button>';
+  domString += '  <button type="submit" id="superFun">Taking A European Vacation</button>';
+  domString += '  <button type="submit" id="slightlyFun">Coding Homework</button>';
   domString += '</div>';
   util.printToDom('play', domString);
   document.getElementById('superFun').addEventListener('click', (e) => {
