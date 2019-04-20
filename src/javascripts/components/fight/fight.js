@@ -16,8 +16,8 @@ const domStringBuilder = () => {
   let domString = '';
   domString += '<div class="flxCol" id="fightQuad">';
   domString += '  <h1>Fight</h1>';
-  domString += '  <p>User: uniqueUserName</p>';
-  domString += `  <p>Fullness Score: <span>${total}</span></p>`;
+  domString += '  <h3>User: uniqueUserName</h3>';
+  domString += `  <h3>Fullness Score: <span>${total}</span></h3>`;
   domString += '  <button type="submit" id="runAway">Run Away... <em>bravely</em></button>';
   domString += '  <button type="submit" id="brawl">Brawl</button>';
   domString += '</div>';

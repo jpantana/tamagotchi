@@ -1,4 +1,5 @@
 import util from '../../helpers/util';
+import './eat.scss';
 
 let total = 100;
 
@@ -15,8 +16,8 @@ const domStringBuilder = () => {
   let domString = '';
   domString += '<div class="flxCol" id="eatQuad">';
   domString += '  <h1>Eat</h1>';
-  domString += '  <p>User: uniqueUserName</p>';
-  domString += `  <p>Fullness Score: <span>${total}</span></p>`;
+  domString += '  <h3>User: uniqueUserName</h3>';
+  domString += `  <h3>Fullness Score: <span>${total}</span></h3>`;
   domString += '  <button type="submit" id="healthy">Lemon Grass Oil</button>';
   domString += '  <button type="submit" id="unhealthy">Cheeseburger Pizza</button>';
   domString += '</div>';

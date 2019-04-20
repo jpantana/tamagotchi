@@ -1,0 +1,11 @@
+@import '../../../styles/main.scss';
+
+#fightQuad {
+  width: 400px;
+  background-color: $fightColor;
+  min-height: 21em;
+  margin: auto;
+  margin-top: -176px;
+  border-radius: 0 0 0 40px;
+  text-align: center;
+}
