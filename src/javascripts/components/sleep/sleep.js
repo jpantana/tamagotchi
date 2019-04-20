@@ -14,9 +14,9 @@ const sleep = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div id="sleepQuad">';
+  domString += '<div class="flxCol" id="sleepQuad">';
   domString += '  <h1>Sleep</h1>';
-  domString += '  <p>jpan</p>';
+  domString += '  <p>User: uniqueUserName</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
   domString += '  <button type="submit" id="catNap">Cat Nap</button>';
   domString += '  <button type="submit" id="solid8">Solid Eight Hours</button>';

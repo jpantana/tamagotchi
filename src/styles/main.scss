@@ -1,42 +1,103 @@
+$primary-color: #ff5722;
+$soft-color: #ffccbc;
+$secondary-color: #c6ff00;
+$main-font: 'Poppins', sans-serif;
+$brand-font: 'Shadows Into Light', cursive;
+$brand-font2: 'Caveat', cursive;
+
 body {
   background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-family: $main-font;
+  font-size: 5em;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#brand {
+  text-align: left;
+  font-family: $brand-font2;
+  font-size: 2em;
+  text-decoration: underline greenyellow;
+  margin-left: 10px;
+  // margin-right: 250px;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke-color: black;
 }
 
 .container {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
+  background-color: green;
+  border-radius: 900px;
+  max-width: 85%;
+  min-height: 1000px;
+  margin: auto;
+  margin-top: -60px;
+}
+
+button {
+  background-color: white;
+  font-family: $main-font;
+  line-height: 200%;
+  font-size: 15px;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  
+}
+
+.flxCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #eatQuad {
-  width: 600px;
+  width: 400px;
   background-color: greenyellow;
   min-height: 20em;
   margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-#sleepQuad {
-  width: 600px;
-  background-color: red;
-  min-height: 20em;
-  margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-#fightQuad {
-  width: 600px;
-  background-color: blue;
-  min-height: 20em;
-  margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-top: 160px;
+  border-radius: 20px;
+  text-align: center;
 }
 #playQuad {
-  width: 600px;
+  width: 400px;
   background-color: teal;
   min-height: 20em;
   margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-top: 160px;
+  border-radius: 20px;
+  text-align: center;
+}
+#sleepQuad {
+  width: 400px;
+  background-color: red;
+  min-height: 20em;
+  margin: auto;
+  margin-top: -140px;
+  border-radius: 20px;
+  text-align: center;
+}
+#fightQuad {
+  width: 400px;
+  background-color: blue;
+  min-height: 20em;
+  margin: auto;
+  margin-top: -140px;
+  border-radius: 20px;
+  text-align: center;
 }

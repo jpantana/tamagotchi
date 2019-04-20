@@ -13,11 +13,11 @@ const pointTally = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div id="eatQuad">';
+  domString += '<div class="flxCol" id="eatQuad">';
   domString += '  <h1>Eat</h1>';
-  domString += '  <p>jpan</p>';
+  domString += '  <p>User: uniqueUserName</p>';
   domString += `  <p>Fullness Score: <span>${total}</span></p>`;
-  domString += '  <button type="submit" id="healthy">Pure Lemon Grass Seed Oil Extract</button>';
+  domString += '  <button type="submit" id="healthy">Lemon Grass Oil</button>';
   domString += '  <button type="submit" id="unhealthy">Cheeseburger Pizza</button>';
   domString += '</div>';
   util.printToDom('eat', domString);
