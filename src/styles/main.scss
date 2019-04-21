@@ -14,7 +14,7 @@ body {
   background-color: rgb(69, 143, 244);
 }
 
-.container {
+#app {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
@@ -37,16 +37,6 @@ h1 {
   -webkit-text-stroke-color: white;
 }
 
-#brand {
-  text-align: left;
-  font-family: $brand-font2;
-  font-size: 2em;
-  margin-left: 10px;
-  // margin-right: 250px;
-  text-transform: uppercase;
-  color: black;
-  -webkit-text-stroke-color: black;
-}
 h3 {
   padding: none;
   margin: auto;
@@ -59,7 +49,8 @@ button {
   font-family: $main-font;
   border-radius: 8px;
   border: none; 
-  line-height: 180%;
+  // line-height: 180%;
+  line-height: 35px;
   font-size: 15px;
   width: 50%;
   justify-content: center;
@@ -77,18 +68,6 @@ button {
   align-items: center;
 }
 
-#pet {
-background-color: rgba(255, 255, 255, .5);
-border-radius: 500px;
-max-height: 200px;
-min-height: 200px;
-position: absolute;
-top: 400px;
-z-index: 100;
+.quad {
+  width: 400px;
 }
-
-#pet:first-child {
-  margin: auto;
-  margin-top: 100px;
-}
-

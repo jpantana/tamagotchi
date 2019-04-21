@@ -14,6 +14,7 @@ const pointTally = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
+  domString += '<h1 id="brand">Tamogachi</h1>';
   domString += '<div class="flxCol" id="eatQuad">';
   domString += '  <h1>Eat</h1>';
   domString += '  <h3>User: uniqueUserName</h3>';

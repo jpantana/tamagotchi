@@ -1,11 +1,24 @@
 @import '../../../styles/main.scss';
 
 #eatQuad {
-  width: 400px;
   background-color: $eatColor;
   min-height: 21em;
   margin: auto;
   margin-top: 160px;
   border-radius: 40px 0 0 0;
   text-align: center;
+}
+
+#brand {
+  text-align: left;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-family: $brand-font2;
+  font-size: 2em;
+  margin-left: 10px;
+  // margin-right: 250px;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke-color: black;
 }
