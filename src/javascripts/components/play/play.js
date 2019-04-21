@@ -14,6 +14,10 @@ const fun = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
+  domString += '<p id="progress">life Force:</p>';
+  domString += '<div id="firstProg">';
+  domString += '  <div id="secondProg"></div>';
+  domString += '</div>';
   domString += '<div class="flxCol" id="playQuad">';
   domString += '  <h1>Play</h1>';
   domString += '  <h3>User: uniqueUserName</h3>';

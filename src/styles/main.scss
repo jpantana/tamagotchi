@@ -71,3 +71,33 @@ button {
 .quad {
   width: 400px;
 }
+
+#firstProg {
+  height: 30px;
+  width: 180px;
+  border-radius: 8px;
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+#progress {
+  z-index: 100;
+  position: absolute;
+  top: -5px;
+  right: 121px;
+  text-transform: uppercase;
+}
+
+#secondProg {
+  height: 28px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: red;
+  z-index: 200;
+  position: absolute;
+  top: 1px;
+  right: 139px;
+}
