@@ -1,42 +1,73 @@
+$primary-color: #ff5722;
+$soft-color: #ffccbc;
+$secondary-color: #c6ff00;
+$main-font: 'Poppins', sans-serif;
+$brand-font: 'Shadows Into Light', cursive;
+$brand-font2: 'Caveat', cursive;
+$eatColor: rgb(247,235, 111);
+$eatColor: rgb(228,218, 88);
+$playColor: rgb(219, 76, 54);
+$fightColor: rgb(234, 164, 78);
+$sleepColor: rgb(166, 191, 83);
+
 body {
-  background-color: white;
+  background-color: rgb(69, 143, 244);
 }
 
-.container {
+#app {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
+  background-color: white;
+  border-radius: 900px;
+  max-width: 85%;
+  min-height: 1000px;
+  margin: auto;
+  margin-top: -60px;
 }
 
-#eatQuad {
-  width: 600px;
-  background-color: greenyellow;
-  min-height: 20em;
-  margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-family: $main-font;
+  font-size: 5em;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
-#sleepQuad {
-  width: 600px;
-  background-color: red;
-  min-height: 20em;
+
+h3 {
+  padding: none;
   margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+  color: rgb(255, 255, 255);
+
 }
-#fightQuad {
-  width: 600px;
-  background-color: blue;
-  min-height: 20em;
-  margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+button {
+  background-color: rgb(69, 143, 244);
+  color: white;
+  font-family: $main-font;
+  border-radius: 8px;
+  border: none; 
+  // line-height: 180%;
+  line-height: 35px;
+  font-size: 15px;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
-#playQuad {
-  width: 600px;
-  background-color: teal;
-  min-height: 20em;
-  margin: auto;
-  margin-right: 5px;
-  margin-left: 5px;
+  button:hover {
+    background-color: rgb(106, 163, 243);
+    cursor: pointer;
+  }
+
+.flxCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quad {
+  width: 400px;
 }

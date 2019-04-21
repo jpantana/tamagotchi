@@ -14,11 +14,11 @@ const fun = (num) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div id="playQuad">';
+  domString += '<div class="flxCol" id="playQuad">';
   domString += '  <h1>Play</h1>';
-  domString += '  <p>jpan</p>';
-  domString += `  <p>Fullness Score: <span>${total}</span></p>`;
-  domString += '  <button type="submit" id="superFun">Taking A European Vacation</button>';
+  domString += '  <h3>User: uniqueUserName</h3>';
+  domString += `  <h3>Fullness Score: <span>${total}</span></h3>`;
+  domString += '  <button type="submit" id="superFun">European Vacation</button>';
   domString += '  <button type="submit" id="slightlyFun">Coding Homework</button>';
   domString += '</div>';
   util.printToDom('play', domString);

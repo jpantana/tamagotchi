@@ -1,0 +1,10 @@
+@import '../../../styles/main.scss';
+
+#sleepQuad {
+  background-color: $sleepColor;
+  min-height: 21em;
+  margin: auto;
+  margin-top: -176px;
+  border-radius: 0 0 40px 0;
+  text-align: center;
+}
