@@ -1,7 +1,7 @@
 import util from '../../helpers/util';
 import './fight.scss';
 
-let total = 0;
+let total = 100;
 
 const fight = (num) => {
   total += num;

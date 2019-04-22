@@ -1,0 +1,158 @@
+@import '../../../styles/main.scss';
+
+#progress {
+  height: 23px;
+  width: 160px;
+  border-radius: 4px;
+  z-index: 100;
+  position: absolute;
+  top: 30px;
+  right: 121px;
+  background-color: rgb(236, 29, 29);
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: black; 
+}
+
+#totalH1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: $brand-font;
+  font-size: 22px;
+}
+
+// #firstTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: -10px;
+//   right: 150px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 80px solid transparent;
+//   border-top: 150px solid transparent;
+//   transform: rotate(150deg);
+// }
+
+// #secondTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 200px;
+//   right: 10px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 180px solid transparent;
+//   border-top: 180px solid transparent;
+//   transform: rotate(140deg);
+// }
+
+// #thirdTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 115px;
+//   left: 10px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 280px solid transparent;
+//   border-top: 210px solid transparent;
+//   transform: rotate(20deg);
+// }
+
+// #fourthTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: -70px;
+//   left: 60px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 300px solid transparent;
+//   border-top: 250px solid transparent;
+//   transform: rotate(40deg);
+// }
+
+// #fifthTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 370px;
+//   left: 35px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 180px solid transparent;
+//   border-top: 250px solid transparent;
+//   transform: rotate(-10deg);
+// }
+
+// #sixthTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 300px;
+//   left: -10px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 290px solid transparent;
+//   border-top: 150px solid transparent;
+//   transform: rotate(0deg);
+// }
+
+
+
+
+
+
+// #firstTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: -65px;
+//   right: 120px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 180px solid transparent;
+//   border-top: 180px solid transparent;
+//   transform: rotate(130deg);
+// }
+
+// #secondTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: -50px;
+//   right: 60px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 300px solid transparent;
+//   border-top: 250px solid transparent;
+//   transform: rotate(140deg);
+// }
+
+// #seventhTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 240px;
+//   right: 20px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 180px solid transparent;
+//   border-top: 250px solid transparent;
+//   transform: rotate(170deg);
+// }
+
+// #eigthTooth {
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   top: 320px;
+//   right: 20px;
+//   border-left: 150px solid $backgroundColor;
+//   border-right: 100px solid transparent;
+//   border-bottom: 290px solid transparent;
+//   border-top: 150px solid transparent;
+//   transform: rotate(200deg);
+// }

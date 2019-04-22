@@ -1,7 +1,7 @@
 import util from '../../helpers/util';
 import './sleep.scss';
 
-let total = 0;
+let total = 50;
 
 const sleep = (num) => {
   total += num;

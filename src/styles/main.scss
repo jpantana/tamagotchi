@@ -9,9 +9,11 @@ $eatColor: rgb(228,218, 88);
 $playColor: rgb(219, 76, 54);
 $fightColor: rgb(234, 164, 78);
 $sleepColor: rgb(166, 191, 83);
+$backgroundColor: rgb(69, 143, 244);
 
 body {
-  background-color: rgb(69, 143, 244);
+  background-color: $backgroundColor;
+  // background-color: rgb(128, 176, 241);
 }
 
 #app {
@@ -70,34 +72,4 @@ button {
 
 .quad {
   width: 400px;
-}
-
-#firstProg {
-  height: 30px;
-  width: 180px;
-  border-radius: 8px;
-  background-color: white;
-  z-index: 100;
-  position: absolute;
-  top: 30px;
-  right: 40px;
-}
-
-#progress {
-  z-index: 100;
-  position: absolute;
-  top: -5px;
-  right: 121px;
-  text-transform: uppercase;
-}
-
-#secondProg {
-  height: 28px;
-  width: 40px;
-  border-radius: 8px;
-  background-color: red;
-  z-index: 200;
-  position: absolute;
-  top: 1px;
-  right: 139px;
 }

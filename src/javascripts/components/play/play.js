@@ -1,7 +1,8 @@
 import util from '../../helpers/util';
+import progressBar from '../progressBar/progressBar';
 import './play.scss';
 
-let total = 0;
+let total = 50;
 
 const fun = (num) => {
   total += num;
@@ -10,14 +11,12 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  progressBar.totalSecond(total);
 };
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<p id="progress">life Force:</p>';
-  domString += '<div id="firstProg">';
-  domString += '  <div id="secondProg"></div>';
-  domString += '</div>';
+  domString += '<div id="progressbar"></div>';
   domString += '<div class="flxCol" id="playQuad">';
   domString += '  <h1>Play</h1>';
   domString += '  <h3>User: uniqueUserName</h3>';
