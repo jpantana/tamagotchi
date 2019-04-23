@@ -11,6 +11,8 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  const newObj = {};
+  newObj[fun] = total;
   progressBar.totalSecond(total);
 };
 

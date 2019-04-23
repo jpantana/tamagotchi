@@ -1,4 +1,5 @@
 import util from '../../helpers/util';
+import progressBar from '../progressBar/progressBar';
 import './fight.scss';
 
 let total = 100;
@@ -10,6 +11,9 @@ const fight = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  const newObj = {};
+  newObj[fight] = total;
+  progressBar.totalSecond(total);
 };
 
 const domStringBuilder = () => {

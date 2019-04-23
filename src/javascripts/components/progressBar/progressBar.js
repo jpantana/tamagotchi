@@ -2,21 +2,9 @@ import util from '../../helpers/util';
 import './progressBar.scss';
 
 const totalSecond = (total) => {
-  const newObj = {
-    eat: 0,
-    play: 0,
-    sleep: 0,
-    fight: 0,
-  };
+  console.error(total);
+  console.error()
   // util.printToDom('progressbar', domString);
-  return newObj;
-  // let domString = '';
-  // console.error(total);
-  // if (total <= 100 && total > 97) {
-  //   domString += '<div id="progress">';
-  //   domString += '</div>';
-  //   domString += `<h1 id="totalH1">${total}</h1>`;
-  // }
 };
 
 // let maxHealth = 400;

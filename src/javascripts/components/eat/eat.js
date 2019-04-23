@@ -14,7 +14,7 @@ const eat = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  progressBar.totalSecond(total[eat]);
+  progressBar.totalSecond(total);
 };
 
 const domStringBuilder = () => {
@@ -22,9 +22,9 @@ const domStringBuilder = () => {
   domString += '<h1 id="brand">Tamogachi</h1>';
   domString += '<div class="flxCol" id="eatQuad">';
   domString += '  <h1>Eat</h1>';
-  // domString += '  <p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>';
   domString += '  <h3>User: uniqueUserName</h3>';
   domString += `  <h3>Fullness Score: <span>${total}</span></h3>`;
+  domString += `  <progress>Fullness Score: <span>${total}</span></h3>`;
   domString += '  <button type="submit" id="healthy">Lemon Grass Oil</button>';
   domString += '  <button type="submit" id="unhealthy">Cheeseburger Pizza</button>';
   domString += '</div>';
