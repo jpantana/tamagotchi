@@ -1,6 +1,6 @@
 import util from '../../helpers/util';
-import progressBar from '../progressBar/progressBar';
 import './play.scss';
+import progressBar from '../progressBar/progressBar';
 
 let total = 50;
 
@@ -11,14 +11,11 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  const newObj = {};
-  newObj[fun] = total;
-  progressBar.totalSecond(total);
+  progressBar.totalHealth(total);
 };
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div id="progressbar"></div>';
   domString += '<div class="flxCol" id="playQuad">';
   domString += '  <h1>Play</h1>';
   domString += '  <h3>User: uniqueUserName</h3>';

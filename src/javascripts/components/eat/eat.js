@@ -1,5 +1,4 @@
 import util from '../../helpers/util';
-import progressBar from '../progressBar/progressBar';
 import './eat.scss';
 
 let total = 100;
@@ -14,7 +13,6 @@ const eat = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  progressBar.totalSecond(total);
 };
 
 const domStringBuilder = () => {
@@ -24,7 +22,6 @@ const domStringBuilder = () => {
   domString += '  <h1>Eat</h1>';
   domString += '  <h3>User: uniqueUserName</h3>';
   domString += `  <h3>Fullness Score: <span>${total}</span></h3>`;
-  domString += `  <progress>Fullness Score: <span>${total}</span></h3>`;
   domString += '  <button type="submit" id="healthy">Lemon Grass Oil</button>';
   domString += '  <button type="submit" id="unhealthy">Cheeseburger Pizza</button>';
   domString += '</div>';
@@ -33,18 +30,12 @@ const domStringBuilder = () => {
     e.preventDefault();
     const healthPoints = 10;
     eat(healthPoints);
-    // healthArray.push(healthPoints);
-    // const score = healthArray.reduce((acc, b) => acc + b); // trying this for progress bar
-    // console.error(score);
     domStringBuilder();
   });
   document.getElementById('unhealthy').addEventListener('click', (e) => {
     e.preventDefault();
     const unhealthPoints = -3;
     eat(unhealthPoints);
-    // unhealthArray.push(unhealthPoints);
-    // const score = unhealthArray.reduce((acc, b) => acc + b); // trying this for progress bar
-    // console.error(score);
     domStringBuilder();
   });
 };

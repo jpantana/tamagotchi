@@ -1,6 +1,6 @@
 import util from '../../helpers/util';
-import progressBar from '../progressBar/progressBar';
 import './sleep.scss';
+import progressBar from '../progressBar/progressBar';
 
 let total = 50;
 
@@ -11,9 +11,7 @@ const sleep = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  const newObj = {};
-  newObj[sleep] = total;
-  progressBar.totalSecond(total);
+  progressBar.totalHealth(total);
 };
 
 const domStringBuilder = () => {

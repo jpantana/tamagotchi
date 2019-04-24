@@ -23,43 +23,22 @@
   color: black; 
 }
 
-#progress {
-  background-color: red;
-  width: 3px;
-  height: 23px;
-  position: absolute;
-  text-align: center;
-}
-
-
-
-
-
-.ui-progressbar {
-  position: relative;
-}
 #progressbar {
-  background: #f5fffa;
-}
-.ui-progressbar .ui-progressbar-value {
-  margin: 0;
-}
-.progress-label {
   position: absolute;
-  text-align: center;
-  width: 100%;
-  color: #cccccc;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
+  background-color: green;
+  width: 100px;
+  line-height: 30px;
+  top: 10px;
 }
-.ui-widget-header {
-  background: #ec2528;
-}
-p {
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 26px;
-}
-.well {
-  margin-top: 20px;
-}
+
+// #progress {
+//   background-color: red;
+//   width: 3px;
+//   height: 23px;
+//   position: absolute;
+//   text-align: center;
+// }
+
+// #progressbar {
+//   background: #f5fffa;
+// }

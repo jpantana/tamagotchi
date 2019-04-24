@@ -1,25 +1,26 @@
 import util from '../../helpers/util';
 import './progressBar.scss';
 
-const totalSecond = (total) => {
-  console.error(total);
-  console.error()
+let thisNum = 300;
+
+const progressBar = (num) => {
+  let domString = '';
+  domString += '<h3 id="totalH1">HEALTH</h3>';
+  domString += `<progress id="progressbar" value="${num}" max="400"></progress>`;
+  util.printToDom('progress', domString);
+  // totalHealth();
+};
+
+const totalHealth = (x) => {
+  console.error(x);
+  const newArr = [];
+  newArr.push(x);
+  console.error(newArr);
+  thisNum = newArr.reduce((acc, b) => acc + b);
+  progressBar(thisNum); // try and extra utility function IN THE MIDDLE OF IT
+  // const eventId = e.target;
+  // console.error(eventId);
   // util.printToDom('progressbar', domString);
 };
 
-// let maxHealth = 400;
-
-const progressBar = () => {
-  let domString = '';
-  domString += '<div></div>';
-  // domString += '<div id="secondTooth"></div>';
-  // domString += '<div id="thirdTooth"></div>';
-  // domString += '<div id="fourthTooth"></div>';
-  // domString += '<div id="fifthTooth"></div>';
-  // domString += '<div id="sixthTooth"></div>';
-  // domString += '<div id="seventhTooth"></div>';
-  // domString += '<div id="eigthTooth"></div>';
-  util.printToDom('progressbar', domString);
-  totalSecond();
-};
-export default { progressBar, totalSecond };
+export default { progressBar, totalHealth };
