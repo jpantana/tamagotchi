@@ -1,13 +1,14 @@
-# tamagotchi
+# Tamagotchi
 
 ## Description
-A website to keep track of movies and their shooting locations.
+A Tamogachi website that allows you to make wise or unwise choices on the behalf of your digital pet.
 
-## Screenshots
+## Screenshots 
+![Image of the Tamogachi website.](https://raw.githubusercontent.com/jpantana/tamagotchi/master/screenshots/tamogachi.png "screenshot of Tamogachi site.")
 
 ## Installation Instructions
 * Clone down this repo
-* at the root of the project, run `npm instal`
+* at the root of the project, run `npm install`
 
 ## How to Run
 * In your terminal, type `npm start`
