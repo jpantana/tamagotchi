@@ -1,7 +1,8 @@
 import util from '../../helpers/util';
 import './play.scss';
+import progressBar from '../progressBar/progressBar';
 
-let total = 0;
+let total = 50;
 
 const fun = (num) => {
   total += num;
@@ -10,6 +11,7 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  progressBar.totalHealth(num); // used to pass total
 };
 
 const domStringBuilder = () => {

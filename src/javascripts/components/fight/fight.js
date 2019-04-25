@@ -1,7 +1,8 @@
 import util from '../../helpers/util';
+import progressBar from '../progressBar/progressBar';
 import './fight.scss';
 
-let total = 0;
+let total = 100;
 
 const fight = (num) => {
   total += num;
@@ -10,6 +11,7 @@ const fight = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  progressBar.totalHealth(num); // used to pass total
 };
 
 const domStringBuilder = () => {

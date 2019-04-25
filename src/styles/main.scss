@@ -9,9 +9,11 @@ $eatColor: rgb(228,218, 88);
 $playColor: rgb(219, 76, 54);
 $fightColor: rgb(234, 164, 78);
 $sleepColor: rgb(166, 191, 83);
+$backgroundColor: rgb(69, 143, 244);
 
 body {
-  background-color: rgb(69, 143, 244);
+  background-color: $backgroundColor;
+  // background-color: rgb(128, 176, 241);
 }
 
 #app {

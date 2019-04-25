@@ -1,15 +1,20 @@
 import util from '../../helpers/util';
 import './eat.scss';
+import progressBar from '../progressBar/progressBar';
 
 let total = 100;
+// const healthArray = [];
+// const unhealthArray = [];
 
-const pointTally = (num) => {
+
+const eat = (num) => {
   total += num;
   if (total > 100) {
     total = 100;
   } else if (total <= 0) {
     total = 0;
   }
+  progressBar.totalHealth(num); // used to pass total
 };
 
 const domStringBuilder = () => {
@@ -26,15 +31,15 @@ const domStringBuilder = () => {
   document.getElementById('healthy').addEventListener('click', (e) => {
     e.preventDefault();
     const healthPoints = 10;
-    pointTally(healthPoints);
+    eat(healthPoints);
     domStringBuilder();
   });
   document.getElementById('unhealthy').addEventListener('click', (e) => {
     e.preventDefault();
     const unhealthPoints = -3;
-    pointTally(unhealthPoints);
+    eat(unhealthPoints);
     domStringBuilder();
   });
 };
 
-export default { domStringBuilder, pointTally };
+export default { domStringBuilder, eat, total };
