@@ -11,7 +11,7 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  progressBar.totalHealth(total);
+  progressBar.totalHealth(num); // used to pass total
 };
 
 const domStringBuilder = () => {

@@ -11,7 +11,7 @@ const sleep = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  progressBar.totalHealth(total);
+  progressBar.totalHealth(num);
 };
 
 const domStringBuilder = () => {

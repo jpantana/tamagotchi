@@ -1,19 +1,50 @@
 @import '../../../styles/main.scss';
 
+
+#progressBar {
+  height: 23px;
+  width: 160px;
+  border-radius: 4px;
+  z-index: 100;
+  // position: absolute;
+  top: 20px;
+  right: 121px;
+  background-color: white;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: black; 
+}
+
+
+
 #progress {
-  position: absolute;
-  top: 50px;
-  right: 140px;
+  
 }
 
 #progressbar {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  background-color: red!important;
+}
 
+progress {
+  
 }
 
 #totalH1 {
   position: absolute;
-  top: -30px;
-  right: -70px;
+  top: 5px;
+  right: 24px;
   font-family: $brand-font;
   font-size: 22px;
+}
+
+#totalNumPrint {
+  position: absolute;
+  top: 18px;
+  z-index: 1000;
+  color: white;
+  right: 150px;
+
 }

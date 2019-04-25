@@ -1,5 +1,6 @@
 import util from '../../helpers/util';
 import './eat.scss';
+import progressBar from '../progressBar/progressBar';
 
 let total = 100;
 // const healthArray = [];
@@ -13,6 +14,7 @@ const eat = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
+  progressBar.totalHealth(num); // used to pass total
 };
 
 const domStringBuilder = () => {

@@ -8,37 +8,3 @@
   border-radius: 0 40px 0 0;
   text-align: center;
 }
-
-#progressBar {
-  height: 23px;
-  width: 160px;
-  border-radius: 4px;
-  z-index: 100;
-  position: absolute;
-  top: 20px;
-  right: 121px;
-  background-color: white;
-  text-align: center; /* To center it horizontally (if you want) */
-  line-height: 30px; /* To center it vertically */
-  color: black; 
-}
-
-#progressbar {
-  position: absolute;
-  background-color: green;
-  width: 100px;
-  line-height: 30px;
-  top: 10px;
-}
-
-// #progress {
-//   background-color: red;
-//   width: 3px;
-//   height: 23px;
-//   position: absolute;
-//   text-align: center;
-// }
-
-// #progressbar {
-//   background: #f5fffa;
-// }
