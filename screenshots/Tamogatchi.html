@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Full Page Screenshot</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/lib-util.js"></script>
+    <script src="js/lib-performance.js"></script>
+    <script src="js/lib-browser.js"></script>
+    <script src="js/lib-storage.js"></script>
+    <script src="js/lib-capture-fullpage.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <!-- ICONS 12px -->
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon--trash-can" viewBox="0 0 12 12">
+                <title>trash-can</title>
+                <path class="path1" d="M9.79 3l-1.79-0.030-0.47-1.38c-0.13-0.32-0.53-0.59-0.88-0.59h-2.3c-0.35 0-0.75 0.27-0.88 0.59l-0.47 1.41h-1.79c-0.12 0-0.21 0.090-0.21 0.21v0.57c0 0.12 0.090 0.21 0.21 0.21h0.79v6.64c0 0.73 0.62 1.36 1.2 1.36h4.74c0.58 0 1.060-0.66 1.060-1.39v-6.6h0.79c0.12 0 0.21-0.090 0.21-0.21v-0.57c0-0.13-0.090-0.22-0.21-0.22zM4.42 2.070c0.020-0.030 0.070-0.070 0.11-0.070l1.93-0.010c0.030 0.010 0.090 0.050 0.11 0.070l0.33 0.94h-2.8l0.32-0.93zM5 9.79c0 0.12-0.1 0.21-0.21 0.21h-0.57c-0.12 0-0.21-0.1-0.21-0.21v-4.58c0-0.12 0.1-0.21 0.21-0.21h0.57c0.12 0 0.21 0.1 0.21 0.21v4.58zM7 9.79c0 0.12-0.1 0.21-0.21 0.21h-0.57c-0.12 0-0.21-0.1-0.21-0.21v-4.58c0-0.12 0.1-0.21 0.21-0.21h0.57c0.12 0 0.21 0.1 0.21 0.21v4.58z"></path>
+            </symbol>
+            <symbol id="icon--trash-can-alt" viewBox="0 0 12 12">
+                <title>trash-can-alt</title>
+                <path class="path1" d="M9.79 3l-1.79-0.030-0.47-1.38c-0.13-0.32-0.53-0.59-0.88-0.59h-2.3c-0.35 0-0.75 0.27-0.88 0.59l-0.47 1.41h-1.79c-0.12 0-0.21 0.090-0.21 0.21v0.57c0 0.12 0.090 0.21 0.21 0.21h0.79v6.73c0 0.73 0.62 1.37 1.2 1.37h4.74c0.58 0 1.060-0.67 1.060-1.4v-6.69h0.79c0.12 0 0.21-0.090 0.21-0.21v-0.57c0-0.13-0.090-0.22-0.21-0.22zM4.42 2.070c0.020-0.030 0.070-0.070 0.11-0.070l1.93-0.010c0.030 0.010 0.090 0.050 0.11 0.070l0.33 0.94h-2.8l0.32-0.93zM8 10.7c0 0.32-0.17 0.4-0.2 0.4h-4.6c-0.030 0-0.2-0.080-0.2-0.4v-6.7h5v6.7z"></path>
+                <path class="path2" d="M7 5.21c0-0.12-0.1-0.21-0.21-0.21h-0.57c-0.12 0-0.22 0.1-0.22 0.21v4.67c0 0.12 0.1 0.21 0.21 0.21h0.57c0.12 0 0.21-0.1 0.21-0.21v-4.67z"></path>
+                <path class="path3" d="M5 5.21c0-0.12-0.1-0.21-0.21-0.21h-0.57c-0.12 0-0.22 0.1-0.22 0.21v4.67c0 0.12 0.1 0.21 0.21 0.21h0.57c0.12 0 0.21-0.1 0.21-0.21v-4.67z"></path>
+            </symbol>
+            <symbol id="icon--download" viewBox="0 0 10 12">
+                <title>download</title>
+                <path class="path1" d="M9 5h-3v-4h-2v4h-3l4 4z"></path>
+                <path class="path2" d="M1 10h8v1h-8v-1z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- ICONS 16px -->
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon--16_next" viewBox="0 0 9 16">
+                <title>16_next</title>
+                <path class="path1" d="M2.3 3.7l-1.3 1.3 4.5 4.5-4.5 4.5 1.3 1.3 5.7-5.8z"></path>
+            </symbol>
+            <symbol id="icon--16_prev" viewBox="0 0 9 16">
+                <title>16_prev</title>
+                <path class="path1" d="M6.7 3.7l1.3 1.3-4.5 4.5 4.5 4.5-1.3 1.3-5.7-5.8z"></path>
+            </symbol>
+            <symbol id="icon--16_cog-wheel" viewBox="0 0 16 16">
+                <title>16_cog-wheel</title>
+                <path class="path1" d="M13.88 10.19l-1.41-1.090c0.020-0.15 0.030-0.36 0.030-0.66s-0.010-0.51-0.030-0.66l1.41-1.090c0.15-0.1 0.17-0.25 0.060-0.44l-1.34-2.31c-0.080-0.15-0.22-0.19-0.41-0.12l-1.66 0.66c-0.35-0.27-0.73-0.49-1.12-0.66l-0.25-1.52c-0.040-0.19-0.15-0.3-0.31-0.3h-2.69c-0.17 0-0.27 0.11-0.31 0.3l-0.25 1.51c-0.31 0.12-0.69 0.35-1.12 0.66l-1.66-0.65c-0.19-0.060-0.32-0.020-0.41 0.13l-1.34 2.31c-0.1 0.19-0.080 0.33 0.060 0.44l1.41 1.090c-0.020 0.15-0.030 0.36-0.030 0.66s0.010 0.51 0.030 0.66l-1.41 1.090c-0.15 0.1-0.17 0.25-0.060 0.44l1.34 2.31c0.080 0.15 0.22 0.19 0.41 0.13l1.66-0.66c0.35 0.27 0.73 0.49 1.12 0.66l0.25 1.63c0.040 0.19 0.15 0.3 0.31 0.3h2.69c0.17 0 0.27-0.11 0.31-0.3l0.25-1.62c0.31-0.12 0.69-0.35 1.12-0.66l1.66 0.65c0.19 0.060 0.32 0.020 0.41-0.13l1.34-2.31c0.1-0.2 0.080-0.34-0.060-0.45zM9.16 10.1c-0.46 0.46-1.010 0.69-1.66 0.69s-1.2-0.23-1.66-0.69c-0.46-0.46-0.69-1.010-0.69-1.66s0.23-1.2 0.69-1.66c0.46-0.45 1.020-0.68 1.66-0.68 0.65 0 1.2 0.23 1.66 0.69s0.69 1.010 0.69 1.66-0.23 1.19-0.69 1.65z"></path>
+            </symbol>
+            <symbol id="icon--16_help" viewBox="0 0 16 16">
+                <title>16_help</title>
+                <path class="path1" d="M8.060 5.75c-2.14 0-2.13 1.95-2.13 1.95h1.2c0.14-0.77 0.48-0.97 0.9-0.97s0.75 0.59 0.75 0.85c0 1.37-1.3 0.83-1.3 2.52h1.3c0-1.1 1.3-0.96 1.3-2.52 0-0.59-0.33-1.83-2.020-1.83zM7.47 10.95v1.3h1.3v-1.3h-1.3z"></path>
+                <path class="path2" d="M8 4c2.761 0 5 2.239 5 5s-2.239 5-5 5c-2.761 0-5-2.239-5-5 0.006-2.759 2.241-4.994 4.999-5zM8 2c-3.866 0-7 3.134-7 7s3.134 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7v0z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <div id="main_screen" class="screen">
+        <div class="header">
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li id="fullpage_button"><svg class="icon full-page" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#404040" d="M0 0v24h30V0"/><path fill="#FFF" d="M2 5h26v17H2"/><g transform="translate(7 12)"><path d="M18 2L17.3.9C17.073.377 16.57.03 16 0H9c-.57.03-1.073.377-1.3.9L7 2H2C.895 2 0 2.895 0 4v13c0 1.105.895 2 2 2h21c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2h-5z" fill="#107FC9"/><path d="M12.5 17C8.91 17 6 14.09 6 10.5S8.91 4 12.5 4 19 6.91 19 10.5c0 1.724-.685 3.377-1.904 4.596C15.876 16.316 14.224 17 12.5 17z" fill="#FFF"/><circle fill="#107FC9" cx="12.5" cy="10.5" r="4.5"/></g></g></svg>Capture<br/>Entire Page</li>
+                    <li id="clip_button"><svg class="icon custom-area" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h29v23H0z"/><path fill="#404040" d="M0 0h2v2H0zM0 2h2v2H0zM0 13h2v3H0zM0 7h2v3H0zM27 7h2v3h-2zM27 2h2v2h-2zM2 0h2v2H2zM27 0h2v2h-2zM25 0h2v2h-2zM7 0h3v2H7zM13 0h3v2h-3zM19 0h3v2h-3zM2 21H0v-2h2zM2 23H0v-2h2zM4 23H2v-2h2zM10 23H7v-2h3z"/><g><path d="M32 16.5c0 2-1.6 3.5-3.5 3.5-2 0-3.5-1.6-3.5-3.5 0-2 1.6-3.5 3.5-3.5 2 0 3.5 1.6 3.5 3.5zm-2-1.2c-.4-.4-1-.5-1.4-.5-1 0-1.7.6-1.8 1.5 0 .5 0 1 .4 1.4.3.4.7.6 1 .6 1 0 2-.8 2-1.8 0-.4 0-1-.3-1.2z" fill="#107FC9"/><path d="M29 19.4c-1.7.6-3.4 1.3-5 4l-8.6 5.8s-1.2.8-2.8.8c-.8 0-1.6 0-2.2-.7L10 29l12-8.5c.2 0 3.2-2 4-2.3l.3-.2c.6.8 1.5 1.4 2.6 1.4z" fill="#107FC9"/><path d="M28.5 32c-2 0-3.5-1.6-3.5-3.5 0-2 1.6-3.5 3.5-3.5 2 0 3.5 1.6 3.5 3.5 0 2-1.6 3.5-3.5 3.5zm1.7-3.5c0-1-1-1.7-2-1.7-.3 0-.7 0-1 .5-.3.3-.5 1-.4 1.4 0 1 1 1.6 1.8 1.6.5 0 1-.2 1.3-.6.2-.3.3-.8.2-1.2z" fill="#64C1FF"/><path d="M10.4 15.7c.6-.6 1.4-.7 2.2-.7 1.6 0 2.8.8 2.8.8l8.6 5.8c1.6 2.7 3.3 3.4 5 4-1.2 0-2 .6-2.7 1.4l-.4-.2-4-2.3L10 16l.4-.3zM22 23c.4 0 .6-.2.6-.5s-.2-.6-.5-.6c-.2 0-.5.2-.5.5s.3.5.6.5z" fill="#64C1FF"/></g></g></svg>Capture<br/>Page Snippet</li>
+                </ul>
+            </nav>
+            <div class="warning" id="warning_storage" style="display: none;">
+                <strong>The extension storage is nearly full!</strong>
+                <br/>Please download your captures and delete them from the extension.
+                <span class="close" data-jsfunc="warning_close">&times; close warning</span>
+            </div>
+        </div>
+        
+        <div id="main-content">
+            <nav class="sub-nav">
+                <ul>
+                    <li id="library_link" class="active"><h2>Recent captures</h2></li>
+                    <li id="tips_link"><span><svg class="icon icon--16"><use xlink:href="#icon--16_help"></use></svg> Help</span></li>
+                    <li id="settings_link"><span><svg class="icon icon--16" style="margin-top: 1px;"><use xlink:href="#icon--16_cog-wheel"></use></svg> Settings</span></li>
+                </ul>
+            </nav>
+
+            <!-- Library -->
+            <div id="library" class="slideshow">
+                <div class="empty-state"><div class="empty-state__content">Loading …</div></div>
+            </div>
+
+            <!-- Tips -->
+            <div id="tips" style="display: none;">
+                <div id="tips_show" class="slideshow">
+                    <div class="slideshow-slide"><img src="img/tip_04.png" srcset="img/tip_04.png 1x, img/tip_04@2x.png 2x" /><span><a href="https://help.conceptboard.com/hc/en-us/articles/207838129?utm_source=cb&utm_medium=extension&utm_campaign=screenshot%20help">Visit the full documentation, here …</a></span></div>
+                    <div class="slideshow-slide"><img src="img/tip_03.png" srcset="img/tip_03.png 1x, img/tip_03@2x.png 2x" /><span><a href="https://help.conceptboard.com/hc/en-us/articles/207838129?utm_source=cb&utm_medium=extension&utm_campaign=screenshot%20help">Visit the full documentation, here …</a></span></div>
+                    <div class="slideshow-slide"><img src="img/tip_02.png" srcset="img/tip_02.png 1x, img/tip_02@2x.png 2x" /><span><a href="https://help.conceptboard.com/hc/en-us/articles/207838129?utm_source=cb&utm_medium=extension&utm_campaign=screenshot%20help">Visit the full documentation, here …</a></span></div>
+                    <div class="slideshow-slide current"><img src="img/tip_01.png" srcset="img/tip_01.png 1x, img/tip_01@2x.png 2x" /><span><a href="https://help.conceptboard.com/hc/en-us/articles/207838129?utm_source=cb&utm_medium=extension&utm_campaign=screenshot%20help">Visit the full documentation, here …</a></span></div>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div id="settings" style="display: none;">
+                <ul class="settings-container">
+                    <li>
+                        Local storage used:
+                        <strong id="settings_storage_display"></strong>
+                        <span class="link" data-jsfunc="settings_storage_clear_all">Clear storage</span>
+                    </li>
+                    <li>
+                        Screenshot scroll delay:
+                        <strong id="settings_delay_display"></strong>
+                        <span class="link" data-jsfunc="settings_delay_reset">Reset</span>
+                        <input id="settings_delay_slider" type="range" min="0" max="5000" step="100" />
+                    </li>
+                    <li>
+                        Static header/footer up to:
+                        <strong id="settings_ratio_display"></strong>
+                        <span class="link" data-jsfunc="settings_ratio_reset">Reset</span>
+                        <input id="settings_ratio_slider" type="range" min="0" max="0.4" step="0.01" />
+                    </li>
+                </ul>
+                <a href="https://chrome.google.com/webstore/detail/full-page-screenshot/glgomjpomoahpeekneidkinhcfjnnhmb/reviews" class="rate-request"><strong>★★★★★</strong><br/>Please tell us how you like this extension!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullpage_screen" class="screen" style="display:none;">
+        <div class="header">
+            <h1>Capturing full page...</h1>
+            <div class="progress-bar">
+                <span id="progress-number">0%</span>
+                <span id="fullpage_progress_bar"></span>
+            </div>
+            For best results, <strong>please do not scroll</strong> or move your mouse over the page. Thank you!
+        </div>
+    </div>
+
+    <div id="iframes_screen" class="screen" style="display:none; text-align:center;">
+        <div class="header">
+            <h1 style="text-transform:none;">iFrames detected</h1>
+            There are iFrames in this page. For best results, open iFrame in a new tab before taking a screenshot:
+            <ul id="iframes_list"></ul><br/>
+            <span id="skip_frames_button" class="button"><strong>Ignore iFrames, continue</strong></span>
+        </div>
+    </div>
+
+    <footer>
+        Made by <strong><a tabindex="-1" class="silent" href="https://conceptboard.com/?utm_source=cb&utm_medium=extension&utm_campaign=screenshot%20sponsor">Conceptboard · Working Visually</a></strong>
+    </footer>
+</body>
+</html>
