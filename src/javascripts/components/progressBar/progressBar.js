@@ -24,6 +24,11 @@ const progressBar = (num) => {
 const totalHealth = (x) => {
   newArr.push(x);
   thisNum = newArr.reduce((acc, b) => acc + b);
+  if (thisNum > 400) {
+    thisNum = 400;
+  } else if (thisNum < 0) {
+    thisNum = 0;
+  }
   progressBar(thisNum);
 };
 

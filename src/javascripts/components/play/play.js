@@ -3,6 +3,8 @@ import './play.scss';
 import progressBar from '../progressBar/progressBar';
 
 let total = 50;
+const superFunArr = [];
+const slightlyFunArr = [];
 
 const fun = (num) => {
   total += num;
@@ -11,7 +13,7 @@ const fun = (num) => {
   } else if (total <= 0) {
     total = 0;
   }
-  progressBar.totalHealth(num); // used to pass total
+  progressBar.totalHealth(num);
 };
 
 const domStringBuilder = () => {
@@ -26,13 +28,25 @@ const domStringBuilder = () => {
   util.printToDom('play', domString);
   document.getElementById('superFun').addEventListener('click', (e) => {
     e.preventDefault();
-    const superFun = 50;
+    let superFun = 50;
+    if (e) {
+      superFunArr.push(1);
+    }
+    if (superFunArr.length > 1) {
+      superFun = 0;
+    }
     fun(superFun);
     domStringBuilder();
   });
   document.getElementById('slightlyFun').addEventListener('click', (e) => {
     e.preventDefault();
-    const slightlyFun = 2;
+    let slightlyFun = 2;
+    if (e) {
+      slightlyFunArr.push(1);
+    }
+    if (slightlyFunArr.length > 25) {
+      slightlyFun = 0;
+    }
     fun(slightlyFun);
     domStringBuilder();
   });
