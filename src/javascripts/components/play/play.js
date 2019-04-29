@@ -10,7 +10,7 @@ const fun = (num) => {
   total += num;
   if (total > 100) {
     total = 100;
-  } else if (total <= 0) {
+  } else if (total < 0) {
     total = 0;
   }
   progressBar.totalHealth(num);

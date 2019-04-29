@@ -8,12 +8,14 @@ let total = 100;
 
 
 const eat = (num) => {
+  console.error(num, 'first on eat');
   total += num;
   if (total > 100) {
     total = 100;
   } else if (total <= 0) {
     total = 0;
   }
+  console.error(num, 'second on eat');
   progressBar.totalHealth(num); // used to pass total
 };
 
