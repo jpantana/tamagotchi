@@ -3,8 +3,6 @@ import './sleep.scss';
 import progressBar from '../progressBar/progressBar';
 
 let total = 50;
-const catNapArr = [];
-const sleepArr = [];
 
 const sleep = (num) => {
   total += num;
@@ -29,10 +27,7 @@ const domStringBuilder = () => {
   document.getElementById('catNap').addEventListener('click', (e) => {
     e.preventDefault();
     let catNap = 50;
-    if (e) {
-      catNapArr.push(1);
-    }
-    if (catNapArr.length > 1) {
+    if (total >= 100) {
       catNap = 0;
     }
     sleep(catNap);
@@ -41,11 +36,10 @@ const domStringBuilder = () => {
   document.getElementById('solid8').addEventListener('click', (e) => {
     e.preventDefault();
     let solid8 = 60;
-    if (e) {
-      sleepArr.push(1);
-    }
-    if (sleepArr.length > 1) {
+    if (total >= 100) {
       solid8 = 0;
+    } else if (total === 50) {
+      solid8 = 50;
     }
     sleep(solid8);
     domStringBuilder();
