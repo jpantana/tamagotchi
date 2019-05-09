@@ -24,16 +24,24 @@ const domStringBuilder = () => {
   domString += '  <button type="submit" id="brawl">Brawl</button>';
   domString += '</div>';
   util.printToDom('fight', domString);
-  document.getElementById('runAway').addEventListener('click', (e) => {
-    e.preventDefault();
-    const runAway = 1;
-    fight(runAway);
-    domStringBuilder();
-  });
   document.getElementById('brawl').addEventListener('click', (e) => {
     e.preventDefault();
-    const brawl = -10;
+    let brawl = -10;
+    if (total === 0) {
+      brawl = 0;
+    } else if (total > 0 && total < 9) {
+      brawl = -total;
+    }
     fight(brawl);
+    domStringBuilder();
+  });
+  document.getElementById('runAway').addEventListener('click', (e) => {
+    e.preventDefault();
+    let runAway = 1;
+    if (total === 100) {
+      runAway = 0;
+    }
+    fight(runAway);
     domStringBuilder();
   });
 };

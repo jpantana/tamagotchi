@@ -3,9 +3,6 @@ import './eat.scss';
 import progressBar from '../progressBar/progressBar';
 
 let total = 100;
-// const healthArray = [];
-// const unhealthArray = [];
-
 
 const eat = (num) => {
   total += num;
@@ -30,13 +27,23 @@ const domStringBuilder = () => {
   util.printToDom('eat', domString);
   document.getElementById('healthy').addEventListener('click', (e) => {
     e.preventDefault();
-    const healthPoints = 10;
+    let healthPoints = 10;
+    if (total >= 90) {
+      healthPoints = 0;
+    }
     eat(healthPoints);
     domStringBuilder();
   });
   document.getElementById('unhealthy').addEventListener('click', (e) => {
     e.preventDefault();
-    const unhealthPoints = -3;
+    let unhealthPoints = -3;
+    if (total <= 0) {
+      unhealthPoints = 0;
+    } else if (total === 2) {
+      unhealthPoints = -2;
+    } else if (total === 1) {
+      unhealthPoints = -1;
+    }
     eat(unhealthPoints);
     domStringBuilder();
   });

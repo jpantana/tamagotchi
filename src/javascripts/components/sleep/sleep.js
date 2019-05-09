@@ -26,13 +26,21 @@ const domStringBuilder = () => {
   util.printToDom('sleep', domString);
   document.getElementById('catNap').addEventListener('click', (e) => {
     e.preventDefault();
-    const catNap = 50;
+    let catNap = 50;
+    if (total >= 100) {
+      catNap = 0;
+    }
     sleep(catNap);
     domStringBuilder();
   });
   document.getElementById('solid8').addEventListener('click', (e) => {
     e.preventDefault();
-    const solid8 = 60;
+    let solid8 = 60;
+    if (total >= 100) {
+      solid8 = 0;
+    } else if (total === 50) {
+      solid8 = 50;
+    }
     sleep(solid8);
     domStringBuilder();
   });
